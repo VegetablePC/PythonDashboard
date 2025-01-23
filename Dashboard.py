@@ -22,4 +22,4 @@ fig2.update_layout(title_text="Claims During Clear Weather", title_x=0.4) # Titl
 fig2.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to say "Total Loss in Dollars" instead of default column title
 st.plotly_chart(fig2)
 
-st.print(desc.read())
+st.write(desc.read())
