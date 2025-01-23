@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import textwrap
 
 
 # Reads both CSV sheets for data
@@ -25,5 +24,4 @@ fig2.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to 
 st.plotly_chart(fig2)
 
 st.markdown("<h1 style='text-align: center; color: white; '>Description</h1>", unsafe_allow_html=True)
-textwrap.indent(desc)
 st.write(desc.read())
