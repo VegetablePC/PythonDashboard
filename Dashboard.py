@@ -7,12 +7,12 @@ import plotly.express as px
 data1 = pd.read_csv("crimestormQ.csv")
 data2 = pd.read_csv("crimenostormQ.csv")
 
-df1 = pd.DataFrame(data1)
-df2 = pd.DataFrame(data2)
+df1 = pd.DataFrame(data1) # Creates dataframe for data1
+df2 = pd.DataFrame(data2) # Creates dataframe for data2
 
-total1 = df1['Loss'].sum()
-total2 = df2['Loss'].sum()
-total3 = total1 - total2
+total1 = df1['Loss'].sum() # Totals only the loss column from data1
+total2 = df2['Loss'].sum() # Totals only the loss column from data2
+total3 = total1 - total2   # Difference between the totals
 
 #Plots our initial lines by defining fig1 and fig2 as plotly lines
 fig1 = px.line(data1, x="Date", y="Loss") 
@@ -33,6 +33,7 @@ fig2.update_yaxes(range=[0, 3500]) # Sets range to 3500 to match fig1
 fig2.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to say "Total Loss in Dollars" instead of default column title
 st.plotly_chart(fig2)
 
-st.write("Total loss during stormy weather: ", total1.round(2))
-st.write("Total loss during clear weather:  ", total2.round(2))
-st.write("Difference between losses:        ", total3.round(2))
+st.write("Total loss during stormy weather: ", total1.round(2)) # Prints total loss value for stormy weather
+st.write("Total loss during clear weather:  ", total2.round(2)) # Prints total loss value for clear weather
+st.write("Difference between losses:        ", total3.round(2)) # Prints difference between previous two value
+#                                       ^ Above gaps are purely visual for code and comments
