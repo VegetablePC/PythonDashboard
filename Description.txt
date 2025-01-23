@@ -1,0 +1,1 @@
+  These two graphs display a difference in loss statistics between periods of storm activity and clear weather. As we can see, the amount of loss in dollars is clearly higher during periods of storm activity vs when clear weather occurs.
