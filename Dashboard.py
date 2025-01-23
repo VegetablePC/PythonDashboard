@@ -6,8 +6,6 @@ import requests as rq
 # Reads both CSV sheets for data
 data1 = pd.read_csv("crimestormQ.csv")
 data2 = pd.read_csv("crimenostormQ.csv")
-desc = print(Description.txt)
-
 
 #Plots our initial lines by defining fig1 and fig2 as plotly lines
 fig1 = px.line(data1, x="Date", y="Loss") 
