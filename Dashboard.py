@@ -24,4 +24,4 @@ fig2.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to 
 st.plotly_chart(fig2)
 
 st.markdown("<h1 style='text-align: center; color: white; '>Description</h1>", unsafe_allow_html=True)
-st.write(textwrap.indent((desc.read())
+st.write(textwrap.indent((desc.read()))
