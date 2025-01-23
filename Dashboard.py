@@ -23,4 +23,4 @@ fig2.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to 
 st.plotly_chart(fig2)
 
 st.markdown("<h1 style='text-align: center; color: white; '>Description</h1>", unsafe_allow_html=True)
-st.markdown(<p style="margin-left: 15px;">These two graphs display a difference in loss statistics between periods of storm activity and clear weather. As we can see, the amount of loss in dollars is clearly higher during periods of storm activity vs when clear weather occurs.</p>)
+st.markdown(<p style="margin-left: 15px;">"These two graphs display a difference in loss statistics between periods of storm activity and clear weather. As we can see, the amount of loss in dollars is clearly higher during periods of storm activity vs when clear weather occurs."</p>)
