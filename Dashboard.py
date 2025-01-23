@@ -25,7 +25,7 @@ st.markdown("<h1 style='text-align: center; color: white; '>Losses During Stormy
 fig1.update_yaxes(range=[0, 3500]) # Sets range to 3500 to match fig2
 fig1.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to say "Total Loss in Dollars" instead of default column title
 st.plotly_chart(fig1)
-st.write(total1)
+st.write("Total loss during stormy weather: ", total1)
 
 st.markdown("<h1 style='text-align: center; color: white; '>Losses During Clear Weather</h1>", unsafe_allow_html=True)
 fig2.update_yaxes(range=[0, 3500]) # Sets range to 3500 to match fig1
