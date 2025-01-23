@@ -14,6 +14,6 @@ barfig1 = px.line(data1, x="Date", y="Loss")
 barfig2 = px.line(data2, x="Date", y="Loss")
 
 st.subheader("Claims during storms")
-st.plotly_chart(barfig1)
+st.plotly_chart(barfig1, barfig2)
 st.subheader("Claims during clear weather")
 st.plotly_chart(barfig2)
