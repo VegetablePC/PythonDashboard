@@ -10,10 +10,8 @@ data2 = pd.read_csv("crimenostormQ.csv")
 df1 = pd.DataFrame(data1)
 df2 = pd.DataFrame(data2)
 
-col1 = df1.loc[1]
-total1 = col1.sum()
-col2 = df2.loc[1]
-total2 = col2.sum()
+total1 = df1['Loss'].sum()
+total2 = df2['Loss'].sum()
 
 #Plots our initial lines by defining fig1 and fig2 as plotly lines
 fig1 = px.line(data1, x="Date", y="Loss") 
