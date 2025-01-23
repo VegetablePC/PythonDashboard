@@ -12,13 +12,14 @@ desc = open("Description.txt", "r")
 fig1 = px.line(data1, x="Date", y="Loss") 
 fig2 = px.line(data2, x="Date", y="Loss")
 
+
+st.markdown("<h1 style='text-align: center; color: grey; '>Claims During Stomry Weather</h1>", unsafe_allow_html=True)
 fig1.update_yaxes(range=[0, 3500]) # Sets range to 3500 to match fig2
-fig1.update_layout(title_text="Claims During Stormy Weather", title_x=0.35) # Titles the graph and moves the title closer to center
 fig1.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to say "Total Loss in Dollars" instead of default column title
 st.plotly_chart(fig1)
 
+st.markdown("<h1 style='text-align: center; color: grey; '>Claims During Clear Weather</h1>", unsafe_allow_html=True)
 fig2.update_yaxes(range=[0, 3500]) # Sets range to 3500 to match fig1
-fig2.update_layout(title_text="Claims During Clear Weather", title_x=0.35) # Titles the graph and moves the title closer to center
 fig2.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to say "Total Loss in Dollars" instead of default column title
 st.plotly_chart(fig2)
 
