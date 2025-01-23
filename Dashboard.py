@@ -34,5 +34,5 @@ fig2.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to 
 st.plotly_chart(fig2)
 
 st.write("Total loss during stormy weather: ", total1.round(2))
-st.write("Total loss during clear weather: ", total2.round(2))
-st.write("Difference between losses: ", total3.round(2))
+st.write("Total loss during clear weather:  ", total2.round(2))
+st.write("Difference between losses:        ", total3.round(2))
