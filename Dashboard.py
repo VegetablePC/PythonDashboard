@@ -25,4 +25,4 @@ st.plotly_chart(fig2)
 st.markdown("<h1 style='text-align: center; color: white; '>Description</h1>", unsafe_allow_html=True)
 st.markdown("""
   These two graphs display a difference in loss statistics between periods of storm activity and clear weather. As we can see, the amount of loss in dollars is clearly higher during periods of storm activity vs when clear weather occurs.
-  """")
+  """)
