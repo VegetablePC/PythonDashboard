@@ -33,6 +33,6 @@ fig2.update_yaxes(range=[0, 3500]) # Sets range to 3500 to match fig1
 fig2.update_layout(yaxis_title="Total Loss in Dollars") # Updates the Y Axis to say "Total Loss in Dollars" instead of default column title
 st.plotly_chart(fig2)
 
-st.write("Total loss during stormy weather: ", total1.round())
-st.write("Total loss during clear weather: ", total2.round())
-st.write("Difference between losses: ", total3)
+st.write("Total loss during stormy weather: ", total1.round(2))
+st.write("Total loss during clear weather: ", total2.round(2))
+st.write("Difference between losses: ", total3.round(2))
