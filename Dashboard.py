@@ -12,7 +12,7 @@ df2 = pd.DataFrame(data2)
 
 total1 = df1['Loss'].sum()
 total2 = df2['Loss'].sum()
-total3 = total2 - total1
+total3 = total1 - total2
 
 #Plots our initial lines by defining fig1 and fig2 as plotly lines
 fig1 = px.line(data1, x="Date", y="Loss") 
@@ -35,3 +35,4 @@ st.plotly_chart(fig2)
 
 st.write("Total loss during stormy weather: ", total1)
 st.write("Total loss during clear weather: ", total2)
+st.write("Difference between losses: ", total3)
