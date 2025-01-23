@@ -10,8 +10,8 @@ st.title("Crimes during storms and clear weather")
 st.dataframe(data1)
 st.dataframe(data2)
 
-barfig1 = px.bar(data1, x="Date", y="Loss")
-barfig2 = px.bar(data2, x="Date", y="Loss")
+barfig1 = px.line(data1, x="Date", y="Loss")
+barfig2 = px.line(data2, x="Date", y="Loss")
 
 st.subheader("Claims during storms")
 st.plotly_chart(barfig1)
