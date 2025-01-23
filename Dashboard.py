@@ -12,7 +12,7 @@ fig1 = px.line(data1, x="Date", y="Loss")
 fig2 = px.line(data2, x="Date", y="Loss")
 
 # Title for graph 1
-st.subheader(Claims During Stormy Weather")
+st.subheader("Claims During Stormy Weather")
 
 fig1.update_yaxes(range=[0, 3500]) # Sets range to 3500 to match fig2
 fig1.update_layout(title_text="Claims During Stormy Weather", title_x=0.5)
