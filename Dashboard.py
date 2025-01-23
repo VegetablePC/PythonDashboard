@@ -7,6 +7,11 @@ import plotly.express as px
 data1 = pd.read_csv("crimestormQ.csv")
 data2 = pd.read_csv("crimenostormQ.csv")
 
+df1 = pd.dataframe(data1)
+df2 = pd.dataframe(data2)
+
+dataframe.sum(df1)
+
 #Plots our initial lines by defining fig1 and fig2 as plotly lines
 fig1 = px.line(data1, x="Date", y="Loss") 
 fig2 = px.line(data2, x="Date", y="Loss")
