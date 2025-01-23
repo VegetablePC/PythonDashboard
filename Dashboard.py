@@ -9,7 +9,8 @@ fig1 = px.line(data1, x="Date", y="Loss")
 fig2 = px.line(data2, x="Date", y="Loss")
 
 st.subheader("Claims During Storms")
-fig1.update_yaxes(range=[0, 3500])
+  fig1.update_yaxes(range=[0, 3500])
+  fig1.update_layout(yaxis_title="Total Loss in Dollars")
 st.plotly_chart(fig1)
 
 
