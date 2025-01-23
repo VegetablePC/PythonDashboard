@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-data1 = pd.read_csv("D:/Sample Data Sets/crimestormQ.csv")
-data2 = pd.read_csv("D:/Sample Data Sets/crimenostormQ.csv")
+data1 = pd.read_csv("crimestormQ.csv")
+data2 = pd.read_csv("crimenostormQ.csv")
 
 st.title("Crimes during storms and clear weather")
 
