@@ -6,7 +6,7 @@ data1 = pd.read_csv("crimestormQ.csv")
 data2 = pd.read_csv("crimenostormQ.csv")
 
 fig1 = px.line(data1, x="Date", y="Loss (In Dollars)")
-fig2 = px.line(data2, x="Date", y="Loss")
+fig2 = px.line(data2, x="Date", y="Money Lost")
 
 st.subheader("Claims During Storms")
 fig1.update_yaxes(range=[0, 3500])
