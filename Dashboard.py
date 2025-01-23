@@ -1,7 +1,8 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import requests as rq
+import textwrap
+
 
 # Reads both CSV sheets for data
 data1 = pd.read_csv("crimestormQ.csv")
