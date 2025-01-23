@@ -11,9 +11,9 @@ df1 = pd.DataFrame(data1)
 df2 = pd.DataFrame(data2)
 
 col1 = df1.loc[1]
-total1 = sum(col1)
+total1 = df.sum(col1)
 col2 = df2.loc[1]
-total2 = sum(col1)
+total2 = df.sum(col1)
 
 #Plots our initial lines by defining fig1 and fig2 as plotly lines
 fig1 = px.line(data1, x="Date", y="Loss") 
