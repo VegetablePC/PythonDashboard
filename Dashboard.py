@@ -10,6 +10,8 @@ fig2 = px.line(data2, x="Date", y="Loss")
 
 st.subheader("Claims During Storms")
 st.plotly_chart(fig1)
+fig1.update_yaxes(range=[0, 3000])
 
 st.subheader("Claims During Clear Weather")
 st.plotly_chart(fig2)
+fig2.update_yaxes(range=[0, 3000])
