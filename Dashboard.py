@@ -11,6 +11,7 @@ st.dataframe(data1)
 st.dataframe(data2)
 
 fig1 = px.line(data1, x="Date", y="Loss")
+fig2 = px.line(data2, x="Date", y="Loss")
 
 st.subheader("Claims During Storms")
 st.plotly_chart(fig1)
